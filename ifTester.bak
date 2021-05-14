@@ -1,0 +1,7 @@
+(define len
+  (lambda (L)
+    (if (null? L)
+        0
+        (+ 1 (len (cdr L))))))
+
+(len (quote (1)))
